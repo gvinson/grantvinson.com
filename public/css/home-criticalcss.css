@@ -16,21 +16,25 @@ a{ text-decoration: underline; }
 a[href]::after{ content: ' (', attr(href), ')'; }
 p{ orphans: 3; widows: 3; }
 }
-*{ box-sizing: border-box; max-width: 100%; }
-html, body{ font-size: 14px; line-height: 1.7; font-family: Neutraface2Text-Book, sans-serif; background-color: rgb(240, 240, 240); color: rgb(41, 41, 41); position: relative; height: 100%; width: 100%; }
+*{ box-sizing: border-box; max-width: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+html, body{ font-size: 14px; line-height: 1.7; font-family: Neutraface2Text-Book, sans-serif; background-color: rgb(240, 240, 240); color: rgb(68, 68, 68); position: relative; height: 100%; width: 100%; }
 @media screen and (min-width: 768px){
 html, body{ font-size: 16px; }
 }
+h1{ font-family: Neutraface2Text-Bold, sans-serif; }
+p{ font-size: 1em; line-height: 1.925; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; }
 a{ text-decoration: none; }
-#padding-wrapper{ margin-top: 35px; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(189, 188, 109); border-right-color: rgb(189, 188, 109); border-bottom-color: rgb(189, 188, 109); border-left-color: rgb(189, 188, 109); padding-top: 35px; padding-right: 35px; padding-bottom: 35px; padding-left: 35px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
-i[class^="icon-"]{ display: inline-block; vertical-align: middle; text-indent: -9999px; width: 32px; height: 32px; background-size: 32px 32px; margin-top: 0px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; }
+#padding-wrapper{ margin-top: 1.5em; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 1.5em; padding-right: 1.5em; padding-bottom: 1.5em; padding-left: 1.5em; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(189, 188, 109); border-right-color: rgb(189, 188, 109); border-bottom-color: rgb(189, 188, 109); border-left-color: rgb(189, 188, 109); }
+#content-wrapper{ margin-top: 3em; margin-right: 1.5em; margin-bottom: 0px; margin-left: 1.5em; }
+i[class*="icon-"]{ display: inline-block; vertical-align: middle; text-indent: -9999px; width: 32px; height: 32px; background-size: 32px 32px; margin-top: 0px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; }
 i.icon-logo{ width: 27px; height: 53px; background-size: 27px 53px; }
-header #logo{ float: left; }
+header #logo{ float: left; padding-top: 0px; padding-right: 0.5em; padding-bottom: 0px; padding-left: 0.5em; }
 header .top-nav{ float: right; }
-header .top-nav ul{ display: table; }
+header .top-nav ul{ display: table; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 header .top-nav li{ display: table-cell; }
 header .top-nav a{ display: inline-block; vertical-align: middle; font: normal normal normal 1em/normal Neutraface2Text-Book, sans-serif; color: rgb(41, 41, 41); padding-top: 0px; padding-right: 0.5em; padding-bottom: 0px; padding-left: 0.5em; margin-top: 0px; margin-right: 0.5em; margin-bottom: 0px; margin-left: 0.5em; }
-body.home .title-wrapper{ position: absolute; text-align: center; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); }
+body.home #padding-wrapper{ position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; }
+body.home .title-wrapper{ position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -40%); text-align: center; color: rgb(41, 41, 41); }
 body.home .title-wrapper h1{ font: normal normal normal 11.5625em/normal Neutraface2Text-Bold, sans-serif; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; letter-spacing: 0.17em; }
-body.home .title-wrapper p{ font: normal normal normal 2.815em/normal rbno2_lightregular, sans-serif; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; letter-spacing: 2px; }
+body.home .title-wrapper p{ font: normal normal normal 2.815em/normal rbno2_lightregular, sans-serif; margin-top: 0.05em; margin-right: 0px; margin-bottom: 0.05em; margin-left: 0px; letter-spacing: 2px; }
 body.home .title-wrapper .icon-logo{ width: 16px; height: 32px; background-size: 16px 32px; }

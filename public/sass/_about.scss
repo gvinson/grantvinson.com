@@ -1,0 +1,25 @@
+body.about #content-wrapper {
+	h1 {
+		margin: 0;
+		margin: 0 0 1rem;
+		font-size: 2.8125em;
+		letter-spacing: 1px;
+		line-height: 1em;
+	}
+	p b {
+		font-size: 1.125em;
+		font-family: $neutra-demi;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		font: 1.2em $neutra-bold;
+		padding: 0.5em 0;
+	}
+	li i {
+		padding-right: 2.5em;
+	}
+}

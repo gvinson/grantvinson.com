@@ -1,9 +1,11 @@
 /*
 	Base Elements
  */
-* {
+*, *:before, *:after {
 	@include box-sizing(border-box);
 	max-width: 100%;
+	margin: 0;
+	padding: 0;
 }
 :focus {
 	outline: 0px;
@@ -16,31 +18,50 @@ html, body {
 	line-height: 1.7;
 	font-family: $neutra-book;
 	background-color: $white;
-	color: $black;
+	color: #444444;
 	position: relative;
 	height: 100%;
 	width: 100%;
 }
 
+h1, h2, h3, h4 {
+	font-family: $neutra-bold;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.925;
+	margin: 1.5em 0;
+}
 a {
 	text-decoration: none;
 }
+p a {
+	border-bottom: 1px solid $gold;
+	color: #000;
+	@include transition(color 0.25s ease);
+	&:hover {
+		color: shade($gold, 25);
+	}
+}
+
 
 /*
 	Global Elements
  */
 #padding-wrapper {
-	margin: 35px;
+	margin: 1.5em;
+	padding: 1.5em;
 	border: 1px solid $gold;
-	padding: 35px;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
+}
+#content-wrapper {
+	margin: 3em 1.5em 0 1.5em;
 }
 
 /*
 	Icons
  */
-i[class^="icon-"] {
+i[class*="icon-"] {
 	display: inline-block;
 	vertical-align: middle;
 	text-indent: -9999px;
@@ -53,4 +74,14 @@ i.icon-logo {
 	width: 27px;
 	height: 53px;
 	background-size: 27px 53px;
+}
+
+/*
+	Small Elements
+ */
+.line {
+	width: 2em;
+	height: 2px;
+	background-color: $black;
+	margin: 1em auto;
 }

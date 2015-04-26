@@ -1,0 +1,28 @@
+/*
+Variables
+*/
+$grid-columns: 16;
+
+$breakpoint-small: "@media screen and (min-width: 551px)";
+$breakpoint-medium: "@media screen and (min-width: 768px)";
+$breakpoint-large: "@media screen and (min-width: 993px)";
+
+.grid {
+	max-width: 100%;
+
+	[class*="col-"] {
+	    float: left;
+	    width: 100%;
+	    min-height: 1px; 
+	    &.right {
+	    	float: right;
+	    }
+	}
+	
+	@for $i from 1 through $grid-columns {
+		.col-#{$i} {
+			width: 100 / $grid-columns * $i * 1%;
+		}
+	}
+
+}

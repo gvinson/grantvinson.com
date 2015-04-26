@@ -1,10 +1,17 @@
 body.home {
+	
+	#padding-wrapper {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+
 	.title-wrapper {
 		position: absolute;
-		text-align: center;
 		top: 50%;
 		left: 50%;
-		@include transform(translate(-50%, -50%));
+		@include transform(translate(-50%, -40%));
+		text-align: center;
+		color: $black;
 
 		h1 {
 			font: 11.5625em $neutra-bold;
@@ -13,7 +20,7 @@ body.home {
 		}
 		p {
 			font: 2.815em $rbno2-light;
-			margin: 0;
+			margin: 0.05em 0;
 			letter-spacing: 2px;
 		}
 		.icon-logo {
