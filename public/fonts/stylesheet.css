@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Neutraface2Text-Demi';
+  src: url('Neutraface2Text-Demi.eot');
+  src: url('Neutraface2Text-Demi.eot?#iefix') format('embedded-opentype'),
+       url('Neutraface2Text-Demi.woff2') format('woff2'),
+       url('Neutraface2Text-Demi.woff') format('woff'),
+       url('Neutraface2Text-Demi.ttf') format('truetype'),
+       url('Neutraface2Text-Demi.svg#Neutraface2Text-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neutraface2Text-Book';
+  src: url('Neutraface2Text-Book.eot');
+  src: url('Neutraface2Text-Book.eot?#iefix') format('embedded-opentype'),
+       url('Neutraface2Text-Book.woff2') format('woff2'),
+       url('Neutraface2Text-Book.woff') format('woff'),
+       url('Neutraface2Text-Book.ttf') format('truetype'),
+       url('Neutraface2Text-Book.svg#Neutraface2Text-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neutraface2Text-Bold';
+  src: url('Neutraface2Text-Bold.eot');
+  src: url('Neutraface2Text-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Neutraface2Text-Bold.woff2') format('woff2'),
+       url('Neutraface2Text-Bold.woff') format('woff'),
+       url('Neutraface2Text-Bold.ttf') format('truetype'),
+       url('Neutraface2Text-Bold.svg#Neutraface2Text-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'rbno2_lightregular';
+    src: url('rbno2light-webfont.eot');
+    src: url('rbno2light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rbno2light-webfont.woff2') format('woff2'),
+         url('rbno2light-webfont.woff') format('woff'),
+         url('rbno2light-webfont.ttf') format('truetype'),
+         url('rbno2light-webfont.svg#rbno2_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

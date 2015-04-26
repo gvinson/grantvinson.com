@@ -1,0 +1,25 @@
+body.home {
+	.title-wrapper {
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+
+		h1 {
+			font: 11.5625em $neutra-bold;
+			margin: 0;
+			letter-spacing: 0.17em;
+		}
+		p {
+			font: 2.815em $rbno2-light;
+			margin: 0;
+			letter-spacing: 2px;
+		}
+		.icon-logo {
+			width: 16px;
+			height: 32px;
+			background-size: 16px 32px;
+		}
+	}
+}

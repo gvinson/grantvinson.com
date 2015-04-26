@@ -1,0 +1,56 @@
+/*
+	Base Elements
+ */
+* {
+	@include box-sizing(border-box);
+	max-width: 100%;
+}
+:focus {
+	outline: 0px;
+}
+html, body {
+	font-size: 14px;
+	@media screen and (min-width: 768px) {
+		font-size: 16px;
+	}
+	line-height: 1.7;
+	font-family: $neutra-book;
+	background-color: $white;
+	color: $black;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+	Global Elements
+ */
+#padding-wrapper {
+	margin: 35px;
+	border: 1px solid $gold;
+	padding: 35px;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+
+/*
+	Icons
+ */
+i[class^="icon-"] {
+	display: inline-block;
+	vertical-align: middle;
+	text-indent: -9999px;
+	width: 32px;
+	height: 32px;
+	background-size: 32px 32px;
+	margin: 0 3px;
+}
+i.icon-logo {
+	width: 27px;
+	height: 53px;
+	background-size: 27px 53px;
+}

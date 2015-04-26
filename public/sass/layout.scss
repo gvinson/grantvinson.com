@@ -1,0 +1,16 @@
+////
+// Author: Grant Vinson
+// Website: waterislife.com
+// Import sass files to create 
+// main css file for site
+////
+
+@import "normalize";
+@import "helpers";
+@import "compass";
+@import "vars";
+
+@import "global";
+@import "header";
+
+@import "home";

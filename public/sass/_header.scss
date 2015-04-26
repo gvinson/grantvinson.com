@@ -1,0 +1,25 @@
+header {
+	#logo {
+		float: left;
+	}
+
+	/*
+		Top Navigation
+	 */
+	.top-nav {
+		float: right;
+		ul {
+			display: table;
+		}
+		li {
+			display: table-cell;
+		}
+		a {
+			@include inline-block;
+			font: 1em $neutra-book;
+			color: $black;
+			padding: 0 0.5em;
+			margin: 0 0.5em;
+		}
+	}
+}
