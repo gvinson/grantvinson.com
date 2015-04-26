@@ -1,0 +1,13 @@
+body.work #content-wrapper {
+	.grid {
+		[class*="col-"] {
+			height: 100%;
+			overflow: hidden;
+		}
+		img {
+			@include inline-block;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+}
