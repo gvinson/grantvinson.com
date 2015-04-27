@@ -1,25 +1,61 @@
 body.about #content-wrapper {
-	h1 {
+
+	img#me {
+		vertical-align: middle;
+		@media screen and (max-width: 767px) {
+			@include inline-block;
+		}
+	}
+
+	.line {
+		width: 2em;
+		height: 2px;
+		background-color: $black;
+		margin: 1.65em auto 1em; 
+
+		@media screen and (max-width: 767px) {
+			@include inline-block;
+			@include transform(rotate(90deg));
+		}
+	}
+
+	/*
+		Skills
+	 */
+	ul {
 		margin: 0;
-		margin: 0 0 1rem;
+		padding: 0;
+		list-style: none;
+		@media screen and (max-width: 767px) {
+			@include inline-block;
+		}
+	}
+	li {
+		font: 0.91em $neutra-bold;
+		padding: 0.5em 0;
+		@media screen and (min-width: 993px) {
+			font-size: 1.2em;
+		}
+	}
+	li i {
+		padding-right: 2.5em;
+	}
+
+	/*
+		Main Content
+	 */
+	h1 {
+		margin: 1em 0 0;
 		font-size: 2.8125em;
 		letter-spacing: 1px;
 		line-height: 1em;
+		@media screen and (min-width: 768px) {
+			margin: 0 0 1rem;
+		}
 	}
 	p b {
 		font-size: 1.125em;
 		font-family: $neutra-demi;
 	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	li {
-		font: 1.2em $neutra-bold;
-		padding: 0.5em 0;
-	}
-	li i {
-		padding-right: 2.5em;
-	}
+
 }

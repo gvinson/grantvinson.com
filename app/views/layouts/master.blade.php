@@ -43,24 +43,36 @@
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    
-   <header>
-        <a href="/" id="logo"><i class="icon-logo"></i></a>
-        <nav class="top-nav">
-            <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/work">WORK</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="clearfix"></div>
-   </header>
-
 
     <div id="content-wrapper">
-        @section('content')
-        @show
+        <header>
+             <a href="/" id="logo"><i class="icon-logo"></i></a>
+             <nav class="top-nav">
+                 <ul>
+                     <li><a href="/">HOME</a></li>
+                     <li><a href="/work">WORK</a></li>
+                     <li><a href="/about">ABOUT</a></li>
+                     <li><a href="/contact">CONTACT</a></li>
+                 </ul>
+             </nav>
+             <div class="clearfix"></div>
+
+             <div id="hamburger">
+                <div class="bar-left"></div>
+                <div class="bar-right"></div>
+             </div>
+        </header>
+            
+        <div id="mobile-menu">
+           <div id="mobile-menu-wrapper">
+
+           </div>
+        </div>
+        
+        <div id="content-padding">
+            @section('content')
+            @show
+        </div>
     </div>
 
 </div>

@@ -1,0 +1,130 @@
+%hamburger-position {
+	@include transition(all 0.25s ease);
+	position: absolute;
+	height: 4px;
+	width: 15px;
+	background-color: $black;
+}
+
+/*
+	Hamburger
+ */
+#hamburger {
+	position: absolute;
+	top: 0.5em;
+	right: 1em;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+	z-index: 3;
+
+	right: 3em;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	
+	/*
+		Open Animations
+	 */
+	&.open {
+		[class*="bar-"] {
+			background-color: transparent;
+		}
+		.bar-left:before, .bar-right:before {
+			@include transform(rotate(45deg));
+		}
+		.bar-left:after, .bar-right:after {
+			@include transform(rotate(-45deg));
+		}
+		.bar-left:before {
+			top: -5px;
+			left: 2px;
+		}
+		.bar-left:after {
+			top: 5px;
+			left: 2px;
+		}
+		.bar-right:before {
+			top: 5px;
+			left: -4px;
+		}
+		.bar-right:after {
+			top: -5px;
+			left: -4px;
+		}
+	}
+
+	/*
+		Bar Styles
+	 */
+	[class*="bar-"], [class*="bar-"]:after, [class*="bar-"]:before {
+		@extend %hamburger-position;
+	}
+	[class*="bar-"]:after, [class*="bar-"]:before {
+		top: -8px;
+		content: "";
+	}
+
+	.bar-left {
+		top: 15px;
+		&:after {
+			top: -8px;
+		}
+		&:after {
+			top: 8px;
+		}
+	}
+	.bar-right {
+		top: 15px;
+		left: 15px;
+		&:after {
+			top: -8px;
+		}
+		&:before {
+			top: 8px;
+		}
+	}
+}
+
+
+/*
+Actual Mobile Menu
+ */
+#mobile-menu {
+	position: fixed;
+	display: none;
+	@include opacity(0);
+	@include transition(all 0.25s ease);
+	background-color: $white;
+	top: 1.5em;
+	left: 1.5em;
+	right: 1.5em;
+	bottom: 1.5em;
+	z-index: 2;
+	&.open {
+		display: block;
+		@include opacity(1);
+	}
+
+	#mobile-menu-wrapper {
+		position: relative;
+	}
+
+	.top-nav li {
+		display: block;
+		width: 100%;
+		background-color: white;
+		margin: 0.5%;
+		float: left;
+		width: 49%;
+		text-align: center;
+	}
+
+	.top-nav a {
+		font-size: 1.25em;
+		width: 100%;
+		display: block;
+		color: #222;
+	}
+}

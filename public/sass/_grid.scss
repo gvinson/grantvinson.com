@@ -7,10 +7,9 @@ $breakpoint-small: "@media screen and (min-width: 551px)";
 $breakpoint-medium: "@media screen and (min-width: 768px)";
 $breakpoint-large: "@media screen and (min-width: 993px)";
 
-.grid {
-	max-width: 100%;
 
-	[class*="col-"] {
+@media screen and (min-width: 768px) {
+	.grid [class*="col-"] {
 	    float: left;
 	    width: 100%;
 	    min-height: 1px; 
@@ -20,7 +19,7 @@ $breakpoint-large: "@media screen and (min-width: 993px)";
 	}
 	
 	@for $i from 1 through $grid-columns {
-		.col-#{$i} {
+		.grid .col-#{$i} {
 			width: 100 / $grid-columns * $i * 1%;
 		}
 	}

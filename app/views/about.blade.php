@@ -11,7 +11,7 @@
 	
 	<div class="grid">
 		<div class="col-4">
-			<img src="/img/me.jpg" alt="Grant Vinson">
+			<img id="me" src="/img/me.jpg" alt="Grant Vinson">
 			<div class="line"></div>
 			<ul>
 				<li><i class="icon-develop"></i>DEVELOPMENT</li>
@@ -19,6 +19,7 @@
 				<li><i class="icon-mobile"></i>RESPONSIVE</li>
 				<li><i class="icon-design"></i>DESIGN</li>
 			</ul>
+			<div class="clearfix"></div>
 		</div>
 		<div class="col-10 right">
 			<h1>How do you do,</h1>

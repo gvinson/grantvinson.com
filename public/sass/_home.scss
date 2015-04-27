@@ -5,6 +5,25 @@ body.home {
 		top: 0; left: 0; bottom: 0; right: 0;
 	}
 
+	#content-wrapper {
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	#content-padding {
+		margin-left:0;
+		margin-right:0;
+		padding: 0;
+	}
+
+	header {
+		padding-left: 1.5em;
+	}
+
+	header #hamburger {
+		right: 1.5em;
+	}
+
 	.title-wrapper {
 		position: absolute;
 		top: 50%;
@@ -14,19 +33,41 @@ body.home {
 		color: $black;
 
 		h1 {
-			font: 11.5625em $neutra-bold;
+			font: 4em $neutra-bold;
 			margin: 0;
 			letter-spacing: 0.17em;
+			@media screen and (min-width: 500px) {
+				font-size: 7em;
+				margin: 32px 0 8px;
+			}
+			@media screen and (min-width: 675px) {
+				font-size: 10.5em;
+			}
+			@media screen and (min-width: 810px) {
+				font-size: 11.5625em;
+				margin: 0;
+			}
 		}
 		p {
-			font: 2.815em $rbno2-light;
+			font: 1.25em $rbno2-light;
 			margin: 0.05em 0;
 			letter-spacing: 2px;
+			@media screen and (min-width: 500px) {
+				font-size: 2.25em;
+			}
+			@media screen and (min-width: 810px) {
+				font-size: 2.8175em;
+			}
 		}
 		.icon-logo {
-			width: 16px;
-			height: 32px;
-			background-size: 16px 32px;
+			width: 10px;
+			height: 26px;
+			background-size: 10px 26px;
+			@media screen and (min-width: 500px) {
+				width: 16px;
+				height: 32px;
+				background-size: 16px 32px;
+			}
 		}
 	}
 }
