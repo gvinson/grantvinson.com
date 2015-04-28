@@ -12,7 +12,7 @@
 	<div class="title-wrapper">
 		<h1>GRANT</h1>
 		<p>FRONT END DEVELOPER</p>
-		<i class="icon-logo"></i>
+		<span class="icon-logo"></span>
 		<p>UX DESIGNER</p>
 	</div>
 

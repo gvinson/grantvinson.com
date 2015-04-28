@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 	    	},
 	    	sass: {
     	        files: [ 'public/sass/*.scss' ],
-    	        tasks: ['compass:dist', 'criticalcss:home']
+    	        tasks: ['compass:dist',/* 'criticalcss:home'*/]
     	    },
     	    css: {
     	        options: { livereload: true },

@@ -1,9 +1,12 @@
 body.about #content-wrapper {
 
-	img#me {
+	img.me {
 		vertical-align: middle;
 		@media screen and (max-width: 767px) {
-			@include inline-block;
+			width: 15em;
+			max-width: 75%;
+			margin: 1em auto;
+			display: block;
 		}
 	}
 
@@ -12,33 +15,45 @@ body.about #content-wrapper {
 		height: 2px;
 		background-color: $black;
 		margin: 1.65em auto 1em; 
-
-		@media screen and (max-width: 767px) {
-			@include inline-block;
-			@include transform(rotate(90deg));
-		}
 	}
 
 	/*
 		Skills
 	 */
-	ul {
-		margin: 0;
+	ul.skills {
+		margin: 0 auto;
 		padding: 0;
 		list-style: none;
 		@media screen and (max-width: 767px) {
-			@include inline-block;
+			width: 11.5em;
+			display: block;
 		}
 	}
-	li {
+	ul.skills li {
 		font: 0.91em $neutra-bold;
-		padding: 0.5em 0;
+		padding: 0.625em 0;
+		&:first-child {
+			padding-top: 0.25em;
+		}
 		@media screen and (min-width: 993px) {
 			font-size: 1.2em;
 		}
 	}
-	li i {
-		padding-right: 2.5em;
+	ul.skills [class*="icon-"] {
+		@include inline-block;
+		padding-right: 9%;
+		font-size: 2em;
+		vertical-align: middle;
+		margin-top: -4px;
+		width: 45px;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			padding-right: 7%;
+			width: auto;
+		}
+	}
+	ul.skills .icon-develop {
+		padding-right: 5%;
 	}
 
 	/*
