@@ -50,7 +50,7 @@
                      <li><a href="/">HOME</a></li>
                      <li><a href="/work">WORK</a></li>
                      <li><a href="/about">ABOUT</a></li>
-                     <li><a href="/contact">CONTACT</a></li>
+                     <li><a id="contact-link">CONTACT</a></li>
                  </ul>
              </nav>
              <div class="clearfix"></div>
@@ -68,6 +68,35 @@
         </div>
     </div>
 
+</div>
+
+<div id="contact-content">
+    <div id="left-tri"></div>
+    <div id="contact-wrapper">
+        <p id="close-contact-wrapper">
+          &lt/close &gt
+        </p>
+        <p>
+            <a href="mailto:vinsongrant@gmail.com">
+                <img src="/img/icons/envelope.png">&nbsp;&nbsp;
+                vinsongrant@gmail.com</a>
+        </p>
+        <p>
+            <a href="#" target="_blank">
+                <img src="/img/icons/twitter.png">
+                @grant_vinson
+            </a>
+            <a href="#" target="_blank">
+                <img src="/img/icons/codepen.png">
+                vinsongrant
+            </a>
+            <a href="#" target="_blank">
+                <img src="/img/icons/github.png">
+                gvinson
+            </a>
+        </p>
+    </div>
+    <div id="right-tri"></div>
 </div>
 
 </body>

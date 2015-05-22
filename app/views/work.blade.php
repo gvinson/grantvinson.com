@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-@parent About
+@parent Work
 @stop
 @section('stylesheets')
 	
@@ -21,6 +21,7 @@
 						<span class="icon-ux"></span>
 						<span class="icon-mobile"></span>
 					</div>
+					<a href="http://waterislife.com">VISIT SITE</a>
 				</div>
 			</div>
 		</div>
@@ -35,6 +36,7 @@
 						<span class="icon-ux"></span>
 						<span class="icon-mobile"></span>
 					</div>
+					<a href="http://vastokc.com">VISIT SITE</a>
 				</div>
 			</div>
 		</div>
@@ -49,6 +51,7 @@
 						<span class="icon-ux"></span>
 						<span class="icon-mobile"></span>
 					</div>
+					<a href="http://fellers.com">VISIT SITE</a>
 				</div>
 			</div>
 		</div>
@@ -56,7 +59,7 @@
 			<img src="/img/work/regionalfoodbank-overview.jpg">
 			<div class="overlay">
 				<div class="overlay-content">
-					<p class="site-name">REGIONAL FOOD BANK</p>
+					<p class="site-name">RFBOK</p>
 					<p class="tag">Non-profit dedicated to feeding everyone</p>
 					<div class="services">
 						<span class="icon-develop"></span>
@@ -64,6 +67,7 @@
 						<span class="icon-mobile"></span>
 						<span class="icon-design"></span>
 					</div>
+					<a href="http://regionalfoodbank.org">VISIT SITE</a>
 				</div>
 			</div>
 		</div>
