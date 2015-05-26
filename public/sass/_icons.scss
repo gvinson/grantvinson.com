@@ -1,43 +1,13 @@
-/*
-  Icons
- */
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  color: #444;
-  font-size: 1em;
-  color: $black;
-
-  &.white {
-    color: $white;
-  }
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon {
+  width: 24px;
+  vertical-align: middle;
+}
+#logo .icon {
+  width: 32px;
 }
 
-.icon-design:before {
-  content: "\e600";
-}
-
-.icon-develop:before {
-  content: "\e601";
-}
-
-.icon-mobile:before {
-  content: "\e602";
-}
-
-.icon-ux:before {
-  content: "\e603";
-}
-
-.icon-logo:before {
-  content: "\e604";
+/* Share Icons */
+.share-buttons .icon {
+  height: 1.25em;
+  width: 1.5em;
 }

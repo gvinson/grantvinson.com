@@ -108,11 +108,13 @@ ul, ol {
 
 #contact-content {
 	position: fixed;
-	top: -7em;
+	top: -9em;
 	left: 50%;
 	@include transition(top 0.25s ease);
 	@include transform(translateX(-50%));
 	width: 60%;
+	border: 1px solid $gold;
+	border-top: 0px;
 	&.open {
 		top: 0;
 	}
@@ -127,14 +129,11 @@ ul, ol {
 		cursor: pointer;
 	}
 	#contact-wrapper {
-		background-color: white;
+		background-color: $white;
 		text-align: center;
 		padding: 0.5em 0 1em;
 		p {
-			margin: 0.5em 0 1em;
-			& + p {
-				margin-bottom: 0;
-			}
+			margin: 1em 0 0.5em;
 		}
 		p img {
 			vertical-align: middle;

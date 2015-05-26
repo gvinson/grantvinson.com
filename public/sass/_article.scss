@@ -1,0 +1,70 @@
+article {
+	width: 44em;
+  	margin: 0 auto;
+  	@include clearfix;
+
+  	& + article {
+		margin-top: 1em;
+		padding-top: 3.5em;
+		border-top: 1px solid tint($black, 80);
+	}
+
+	.breadcrumb * {
+		color: tint($black, 50);
+	}
+	.breadcrumb span {
+		padding: 0 0.5em;
+	}
+	.breadcrumb a {
+		font-size: 0.875em;
+		border-bottom: 0px;
+	}
+
+  	a {
+  		color: tint($black, 50);
+  		@include transition(color 0.15s ease);
+  		&:hover {
+  			color: $gold !important;
+  		}
+  	}
+	
+	h1 {
+		margin: 0 0 0.1em;
+		line-height: 1.75;
+	}
+	h1 a {
+		color: $black;
+		&:hover { color: $black !important; }
+	}
+
+	p {
+		margin: 0.5em 0;
+	}
+
+	.meta {
+		margin: 0.5em 0 0;
+		font-size: 0.85em;
+		color: tint($black, 50);
+		float: left;
+	}
+	.meta span:first-child {
+		padding-right: 1em;
+	}
+	.meta span a {
+		border-bottom: 0;
+  		vertical-align: middle;
+		color: tint($black, 40);
+	}
+
+  	.share-buttons {
+  		float: left;
+  		margin: 1em 0 1em;
+  	}
+
+	.read-more {
+		margin-top: 0.5em;
+		float: right;
+		font-size: 0.925em;
+	}
+
+}

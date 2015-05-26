@@ -18,7 +18,7 @@
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"> 
         <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">
         <style>
-            @font-face{font-family:Neutraface2Text-Demi;src:url(/fonts/Neutraface2Text-Demi.eot);src:url(/fonts/Neutraface2Text-Demi.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Demi.woff2) format('woff2'),url(/fonts/Neutraface2Text-Demi.woff) format('woff'),url(/fonts/Neutraface2Text-Demi.ttf) format('truetype'),url(/fonts/Neutraface2Text-Demi.svg#Neutraface2Text-Demi) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Book;src:url(/fonts/Neutraface2Text-Book.eot);src:url(/fonts/Neutraface2Text-Book.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Book.woff2) format('woff2'),url(/fonts/Neutraface2Text-Book.woff) format('woff'),url(/fonts/Neutraface2Text-Book.ttf) format('truetype'),url(/fonts/Neutraface2Text-Book.svg#Neutraface2Text-Book) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Bold;src:url(/fonts/Neutraface2Text-Bold.eot);src:url(/fonts/Neutraface2Text-Bold.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Bold.woff2) format('woff2'),url(/fonts/Neutraface2Text-Bold.woff) format('woff'),url(/fonts/Neutraface2Text-Bold.ttf) format('truetype'),url(/fonts/Neutraface2Text-Bold.svg#Neutraface2Text-Bold) format('svg');font-weight:400;font-style:normal}@font-face{font-family:rbno2_lightregular;src:url(/fonts/rbno2light-webfont.eot);src:url(/fonts/rbno2light-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/rbno2light-webfont.woff2) format('woff2'),url(/fonts/rbno2light-webfont.woff) format('woff'),url(/fonts/rbno2light-webfont.ttf) format('truetype'),url(/fonts/rbno2light-webfont.svg#rbno2_lightregular) format('svg');font-weight:400;font-style:normal}@font-face{font-family:icomoon;src:url(/fonts/icomoon.eot?-21oews);src:url(/fonts/icomoon.eot?#iefix-21oews) format('embedded-opentype'),url(/fonts/icomoon.woff?-21oews) format('woff'),url(/fonts/icomoon.ttf?-21oews) format('truetype'),url(/fonts/icomoon.svg?-21oews#icomoon) format('svg');font-weight:400;font-style:normal;}
+            @font-face{font-family:Neutraface2Text-Demi;src:url(/fonts/Neutraface2Text-Demi.eot);src:url(/fonts/Neutraface2Text-Demi.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Demi.woff2) format('woff2'),url(/fonts/Neutraface2Text-Demi.woff) format('woff'),url(/fonts/Neutraface2Text-Demi.ttf) format('truetype'),url(/fonts/Neutraface2Text-Demi.svg#Neutraface2Text-Demi) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Book;src:url(/fonts/Neutraface2Text-Book.eot);src:url(/fonts/Neutraface2Text-Book.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Book.woff2) format('woff2'),url(/fonts/Neutraface2Text-Book.woff) format('woff'),url(/fonts/Neutraface2Text-Book.ttf) format('truetype'),url(/fonts/Neutraface2Text-Book.svg#Neutraface2Text-Book) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Bold;src:url(/fonts/Neutraface2Text-Bold.eot);src:url(/fonts/Neutraface2Text-Bold.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Bold.woff2) format('woff2'),url(/fonts/Neutraface2Text-Bold.woff) format('woff'),url(/fonts/Neutraface2Text-Bold.ttf) format('truetype'),url(/fonts/Neutraface2Text-Bold.svg#Neutraface2Text-Bold) format('svg');font-weight:400;font-style:normal}@font-face{font-family:rbno2_lightregular;src:url(/fonts/rbno2light-webfont.eot);src:url(/fonts/rbno2light-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/rbno2light-webfont.woff2) format('woff2'),url(/fonts/rbno2light-webfont.woff) format('woff'),url(/fonts/rbno2light-webfont.ttf) format('truetype'),url(/fonts/rbno2light-webfont.svg#rbno2_lightregular) format('svg');font-weight:400;font-style:normal;}
         </style>
     @show
     <!--[if lt IE 9]>
@@ -40,7 +40,9 @@
 
     <div id="content-wrapper">
         <header>
-             <a href="/" id="logo"><span class="icon-logo"></span></a>
+             <a href="/" id="logo">
+                <img class="icon" src="/img/icons/logo.svg">
+            </a>
              <div id="hamburger" class="mobile-only block">
                 <div class="bar-left"></div>
                 <div class="bar-right"></div>
@@ -48,8 +50,8 @@
              <nav class="top-nav">
                  <ul>
                      <li><a href="/">HOME</a></li>
+                     <li><a href="/blog">BLOG</a></li>
                      <li><a href="/work">WORK</a></li>
-                     <li><a href="/about">ABOUT</a></li>
                      <li><a id="contact-link">CONTACT</a></li>
                  </ul>
              </nav>
@@ -78,20 +80,20 @@
         </p>
         <p>
             <a href="mailto:vinsongrant@gmail.com">
-                <img src="/img/icons/envelope.png">&nbsp;&nbsp;
+                <img class="icon" src="/img/icons/envelope.svg">&nbsp;&nbsp;
                 vinsongrant@gmail.com</a>
         </p>
         <p>
             <a href="#" target="_blank">
-                <img src="/img/icons/twitter.png">
+                <img class="icon" src="/img/icons/twitter.svg">
                 @grant_vinson
             </a>
             <a href="#" target="_blank">
-                <img src="/img/icons/codepen.png">
+                <img class="icon" src="/img/icons/codepen.svg">
                 vinsongrant
             </a>
             <a href="#" target="_blank">
-                <img src="/img/icons/github.png">
+                <img class="icon" src="/img/icons/github.svg">
                 gvinson
             </a>
         </p>
@@ -114,6 +116,7 @@
     })();
     </script>
     <script src="/js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="/js/vendor/modernizr.min.js"></script>
     <script src="/js/vendor/picturefill.min.js"></script>
     <script>
     // Cache the Window object

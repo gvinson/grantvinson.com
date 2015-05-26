@@ -12,6 +12,13 @@ class PageController  extends BaseController {
 			$cat = 'home';
 		}
 
+		if ($cat == "blog") {
+			$cat = "blog";
+			if ($page == null) {
+				$page = "index";
+			}
+		}
+
 		if ($page != null) {
 			$body_classes .= ' subpage';
 			$view = View::make($cat.'.'.$page);

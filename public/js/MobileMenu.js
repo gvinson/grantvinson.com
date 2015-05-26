@@ -27,7 +27,6 @@ var MobileMenu = {
 		$('#hamburger').removeClass('open');
 		MobileMenu.wrapper.empty();
 		MobileMenu.menu.removeClass('open');
-
 	},
 
 	resizeNav: function(nav) {
