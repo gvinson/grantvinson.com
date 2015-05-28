@@ -54,6 +54,7 @@ module.exports = function(grunt) {
 		          requirejs: true,
 		          jQuery: true,
 		          $: true,
+		          Modernizr: true,
 		          console: true,
 		          define: true,
 		          windowObj: true,

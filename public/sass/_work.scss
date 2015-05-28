@@ -10,7 +10,6 @@ body.work #content-wrapper {
 				}
 				.overlay-content {
 					margin: 0 auto;
-					// width: 0;
 					overflow: hidden;
 				}
 			}
@@ -18,7 +17,9 @@ body.work #content-wrapper {
 		img {
 			@include inline-block;
 			min-width: 100%;
-			min-height: 100%;
+			@media screen and (min-width: 768px) {
+				min-height: 100%;
+			}
 		}
 	}
 

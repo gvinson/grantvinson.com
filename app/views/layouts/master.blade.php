@@ -15,8 +15,8 @@
     <meta name="description" content="Grant Vinson is a front end developer and user experience designer who is passionate about moving the web in a new direction.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @section('stylesheets')
-        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"> 
-        <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico?v=5" type="image/x-icon"> 
+        <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon">
         <style>
             @font-face{font-family:Neutraface2Text-Demi;src:url(/fonts/Neutraface2Text-Demi.eot);src:url(/fonts/Neutraface2Text-Demi.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Demi.woff2) format('woff2'),url(/fonts/Neutraface2Text-Demi.woff) format('woff'),url(/fonts/Neutraface2Text-Demi.ttf) format('truetype'),url(/fonts/Neutraface2Text-Demi.svg#Neutraface2Text-Demi) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Book;src:url(/fonts/Neutraface2Text-Book.eot);src:url(/fonts/Neutraface2Text-Book.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Book.woff2) format('woff2'),url(/fonts/Neutraface2Text-Book.woff) format('woff'),url(/fonts/Neutraface2Text-Book.ttf) format('truetype'),url(/fonts/Neutraface2Text-Book.svg#Neutraface2Text-Book) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Neutraface2Text-Bold;src:url(/fonts/Neutraface2Text-Bold.eot);src:url(/fonts/Neutraface2Text-Bold.eot?#iefix) format('embedded-opentype'),url(/fonts/Neutraface2Text-Bold.woff2) format('woff2'),url(/fonts/Neutraface2Text-Bold.woff) format('woff'),url(/fonts/Neutraface2Text-Bold.ttf) format('truetype'),url(/fonts/Neutraface2Text-Bold.svg#Neutraface2Text-Bold) format('svg');font-weight:400;font-style:normal}@font-face{font-family:rbno2_lightregular;src:url(/fonts/rbno2light-webfont.eot);src:url(/fonts/rbno2light-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/rbno2light-webfont.woff2) format('woff2'),url(/fonts/rbno2light-webfont.woff) format('woff'),url(/fonts/rbno2light-webfont.ttf) format('truetype'),url(/fonts/rbno2light-webfont.svg#rbno2_lightregular) format('svg');font-weight:400;font-style:normal;}
         </style>
@@ -52,7 +52,7 @@
                      <li><a href="/">HOME</a></li>
                      <li><a href="/blog">BLOG</a></li>
                      <li><a href="/work">WORK</a></li>
-                     <li><a id="contact-link">CONTACT</a></li>
+                     <li><a class="contact-link">CONTACT</a></li>
                  </ul>
              </nav>
              <div class="clearfix"></div>
@@ -73,7 +73,6 @@
 </div>
 
 <div id="contact-content">
-    <div id="left-tri"></div>
     <div id="contact-wrapper">
         <p id="close-contact-wrapper">
           &lt/close &gt
@@ -98,7 +97,6 @@
             </a>
         </p>
     </div>
-    <div id="right-tri"></div>
 </div>
 
 </body>
@@ -107,14 +105,6 @@
         <script src="/js/vendor/html5-3.6-respond-1.1.0.min.js"></script> 
     <![endif]-->
     <link rel="stylesheet" href="/css/layout.css">
-    <script>
-    (function() {
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        link.href = "//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic";
-        document.querySelector("head").appendChild(link);
-    })();
-    </script>
     <script src="/js/vendor/jquery-1.11.0.min.js"></script>
     <script src="/js/vendor/modernizr.min.js"></script>
     <script src="/js/vendor/picturefill.min.js"></script>

@@ -1,6 +1,6 @@
 var Menu = {
 	init : function() {
-		$("#contact-link").on('click touchstart', this.showContact);
+		$("body").on('click touchstart', '.contact-link', this.showContact);
 		$("#close-contact-wrapper").on('click touchstart', this.hideContact);
 	},
 
